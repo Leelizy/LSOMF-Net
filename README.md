@@ -1,4 +1,4 @@
-LSOMF-Net
+# LSOMF-Net
 
 **Lightweight Spatiotemporal Prediction of Underwater Sound Speed Fields from Nonuniform Sparse Observations**
 
@@ -9,7 +9,7 @@ This repository contains the PyTorch implementation of **LSOMF-Net**, a lightwei
 ---
 
 ## Repository structure
-```graphql
+```text
 LSOMF-Net/
 ├── data_preprocessing/    # Data preprocessing and sparse observation generation
 ├── model/                 # LSOMF-Net architecture
@@ -34,7 +34,7 @@ torch  numpy  scikit-learn
 ```
 
 A dedicated environment can be created using:
-```lua
+```bash
 conda create -n lsomf python=3.10
 conda activate lsomf
 pip install numpy==1.26.4 scikit-learn==1.6.0
@@ -55,7 +55,7 @@ data/
 ### Training and evaluation
 
 Train LSOMF-Net on the South Pacific dataset with a 50% missing-data rate:
-```css
+```bash
 python training/train.py --data-path data/south_pacific_data.npz --mask 0.5 --seed 11
 ```
 
