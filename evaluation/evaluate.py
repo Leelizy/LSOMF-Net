@@ -25,7 +25,7 @@ PROTOCOL_KEYS = (
 )
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--data", type=Path, required=True, help="Processed regional NPZ")
+    parser.add_argument("--data", type=Path, required=True, help="Regional sound-speed data in NPZ format")
     parser.add_argument("--checkpoints", type=Path, nargs="+", required=True, help="Trusted checkpoint files")
     parser.add_argument("--argo-mask", type=Path, default=None, help="Argo 3-D observation mask NPZ for Argo checkpoints")
     parser.add_argument("--threads", type=int, default=4)

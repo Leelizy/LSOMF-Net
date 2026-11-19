@@ -4,7 +4,7 @@
 
 This repository contains the PyTorch implementation of **LSOMF-Net**, a lightweight framework for predicting three-dimensional underwater sound speed fields (SSFs) from nonuniform sparse historical observations. The model combines **Observation Context Gated Correction (OCGC)** for historical-state refinement and **Cycle-Aware Orthogonal Moment Fusion (CA-OMF)** for next-month prediction.
 
-> The datasets and pretrained model weights are not included in this repository.
+> The datasets and pretrained model weights are not included in this repository, and no data download link is provided.
 
 ## Repository structure
 
@@ -34,7 +34,7 @@ pip install numpy==1.26.4 scikit-learn==1.6.0
 pip install torch==2.1.2 --index-url https://download.pytorch.org/whl/cu121
 ```
 
-A fresh installation with these versions has not been verified. The original scikit-learn version has not been independently established; this implementation uses PCA with `svd_solver="covariance_eigh"`.
+The original scikit-learn version has not been independently established; this implementation uses PCA with `svd_solver="covariance_eigh"`.
 
 ### Data preparation
 
@@ -48,7 +48,7 @@ data/
 `-- azores_data.npz
 ```
 
-The source of the exact regional NPZ files used in the experiments has not been independently established. The `data/` directory is excluded by `.gitignore`.
+The `data/` directory is excluded by `.gitignore`.
 
 ### Training and evaluation
 
